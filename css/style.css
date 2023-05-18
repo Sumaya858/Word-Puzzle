@@ -1,0 +1,46 @@
+.body {
+    text-align: center;
+
+}
+
+#bigbox {
+  display: inline-block;
+  width: 70rem;
+  height: 500rem;
+  padding: 10px, 100px, 3px, 6px;
+  margin: auto;
+  border: 5px solid rgb(0, 204, 255);  
+  background-color: black; 
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+
+
+.Container {
+    height: 20px;
+    width: 20px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: min-content(4);
+    grid-template-rows: min-content(4);
+    grid-gap: 10px 10px;
+}
+
+.software {
+    background-color: black;
+    color: rgb(250, 243, 243);
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+}
+
+.h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+
