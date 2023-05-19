@@ -1,46 +1,96 @@
 .body {
-    text-align: center;
-
-}
-
-#bigbox {
-  display: inline-block;
-  width: 70rem;
-  height: 500rem;
-  padding: 10px, 100px, 3px, 6px;
-  margin: auto;
-  border: 5px solid rgb(0, 204, 255);  
-  background-color: black; 
-  align-items: center;
-  justify-content: center;
 
 
-}
-
-
-
-
-.Container {
-    height: 20px;
-    width: 20px;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: min-content(4);
-    grid-template-rows: min-content(4);
-    grid-gap: 10px 10px;
-}
-
-.software {
-    background-color: black;
-    color: rgb(250, 243, 243);
-    font-size: 20px;
-    text-align: center;
-    padding: 4px;
 }
 
 .h1 {
     text-align: center;
-    color: blueviolet;
+    color: rgb(182, 85, 182)
 }
 
 
+.container {
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: min-content(6);
+    grid-template-rows: min-content(4);
+    grid-gap: 10px 10px;
+}
+
+.Unit {
+    background-color: black;
+    color: rgb(250, 244, 244);
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+}
+    
+.block-1 {
+    grid-row: 2;
+    grid-column: 6;
+    background-color: blueviolet;
+    
+}
+
+.block-2 {
+    background-color: rgb(77, 147, 168);
+}
+
+.block-3 {
+    background-color: rgb(255, 83, 21);
+}
+
+.block-4 {
+    background-color: seagreen;
+}
+.block-5 {
+     background-color: skyblue;  
+}.block-6 {
+    background-color: lavender;
+}.block-7 {
+    background-color: maroon;
+}.block-8 {
+    background-color: mediumturquoise;
+}.block-9 {
+    background-color: thistle;
+}.block-10 {
+    background-color: crimson;
+}.block-11 {
+    background-color: coral;
+}.block-12 {
+    background-color: darkgoldenrod;
+}.block-13 {
+    background-color: khaki;
+}.block-14 {
+    background-color: lightgreen;
+}.block-15 {
+    background-color: midnightblue;
+}.block-16 {
+    background-color: rosybrown;
+}
+.block-17 {
+    background-color: navy;
+}.block-18 {
+    background-color: rgb(128, 0, 60);
+}.block-4 {
+    
+}.block-4 {
+    
+}.block-4 {
+    
+}.block-4 {
+    
+}.block-4 {
+    
+}.block-4 {
+    
+}
+
+
+
+
+
+.div {
+    align-items: center;
+}
