@@ -35,6 +35,7 @@
 
 .block-2 {
     background-color: rgb(77, 147, 168);
+    
 }
 
 .block-3 {
@@ -45,52 +46,71 @@
     background-color: seagreen;
 }
 .block-5 {
-     background-color: skyblue;  
-}.block-6 {
+     background-color: skyblue;
+     color: black;  
+}
+.block-6 {
     background-color: lavender;
-}.block-7 {
+    color: black;
+}
+.block-7 {
     background-color: maroon;
-}.block-8 {
+}
+.block-8 {
     background-color: mediumturquoise;
-}.block-9 {
+}
+.block-9 {
     background-color: thistle;
-}.block-10 {
+}
+.block-10 {
     background-color: crimson;
-}.block-11 {
+}
+.block-11 {
     background-color: coral;
-}.block-12 {
+}
+.block-12 {
     background-color: darkgoldenrod;
-}.block-13 {
+}
+.block-13 {
     background-color: khaki;
-}.block-14 {
+    color: black;
+}
+.block-14 {
     background-color: lightgreen;
-}.block-15 {
+    color: black;
+}
+.block-15 {
     background-color: midnightblue;
-}.block-16 {
+}
+.block-16 {
     background-color: rosybrown;
 }
 .block-17 {
     background-color: navy;
-}.block-18 {
+}
+.block-18 {
     background-color: rgb(128, 0, 60);
-}.block-4 {
-    
-}.block-4 {
-    
-}.block-4 {
-    
-}.block-4 {
-    
-}.block-4 {
-    
-}.block-4 {
-    
+}
+.block-19 {
+    background-color: rgb(10, 65, 10);
+}
+.block-20 {
+    background-color: rgb(67, 109, 126);
+}
+.block-21 {
+    background-color: rgb(207, 109, 69);
+}
+.block-22 {
+    background-color: orange;
+}
+.block-23 {
+    background-color: salmon;
+}
+.block-24 {
+    background-color: sandybrown;
 }
 
 
 
 
 
-.div {
-    align-items: center;
-}
