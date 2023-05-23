@@ -1,11 +1,39 @@
 // document.getElementById("h1").innerHTML = "Word Search Puzzle";
-$(document).ready(function() {
-$('body').append('<div class= "Unit"></div>');
-$('Unit').each('')
-})
 
-// const unit = ['class room', 'good bye', 'snow man', 'break fast', 'hand some', 'sleep over', 'humpty dumpty', 'mid term', 'butter fly', 'skate board', 'good night', 'rain bow'];
-// const wrong =['red'];
+
+
+let count = 0
+
+// start();
+
+//     $('.start').on('click', function(){
+//         start();
+//     })
+const button = document.createElement('button')
+button.innerText = 'start'
+button.id = 'mainButton'
+let gameStatus = false;
+document.body.appendChild(button)
+$(document).ready(function() {
+
+  $('body').append('<div class= "Unit"></div>');
+  $('Unit').each('')
+
+button.addEventListener('click', (event) => {
+  console.log('clicked')
+  if (event.type === true){
+    gameStatus= true 
+    console.log(gameStatus)
+  }else {
+    gameStatus=false
+  }
+
+
+
+
+
+// const unit = ['class','room','good','bye','snow','man','break','fast','hand','some','sleep', 'over', 'humpty', 'dumpty', 'mid', 'term', 'butter', 'fly', 'skate', 'board','good','night','rain','bow'];
+// let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24];
 
 
 
@@ -25,9 +53,11 @@ $(".block-1").click(function() {
     if (!blockTwo) {
       $(this).css("background-color", "grey");
       blockOne = true
+      gameStatus= true 
   
       if (blockOne && blockTwo) {
-        alert('Correct')}
+        alert('Correct')
+        gameStatus= true }
   
     }
   })
@@ -35,11 +65,18 @@ $(".block-1").click(function() {
     if (blockOne && !blockTwo ) {
       $(this).css("background-color", "grey")
       blockTwo = true
+      gameStatus= true 
   
       if (blockOne && blockTwo) {
-        alert('Correct')
+        count = count + 1
+
+        alert('Correct      your score: '+count)
+        gameStatus= true 
+    console.log(count)
+        
       }
     }
+    
   })
 
 // -------------------------------------------------------------------------------------------------
@@ -51,9 +88,11 @@ $(".block-12").click(function() {
   if (!blockSeven) {
     $(this).css("background-color", "grey");
     blockTwelve = true
+    gameStatus= true 
 
     if (blockTwelve && blockSeven) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -61,11 +100,17 @@ $(".block-7").click(function() {
   if (blockTwelve && !blockSeven ) {
     $(this).css("background-color", "grey")
     blockSeven = true
+    gameStatus= true 
 
     if (blockTwelve && blockSeven) {
-      alert('Correct')
+      count = count + 1
+      alert('Correct      your score: '+count)
+      gameStatus= true 
+    console.log(count)
     }
   }
+  
+    
 })
 
 
@@ -120,9 +165,10 @@ $(".block-3").click(function() {
   if (!blockTwentyThree) {
     $(this).css("background-color", "grey");
     blockThree = true
-
+    gameStatus= true 
     if (blockThree && blockTwentyThree) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -132,11 +178,18 @@ $(".block-23").click(function() {
   if (blockThree && !blockTwentyThree ) {
     $(this).css("background-color", "grey")
     blockTwentyThree = true
-
+    gameStatus= true 
     if (blockThree && blockTwentyThree) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      
+      gameStatus= true 
+     
+    console.log(count)
+  
     }
   }
+    
 })
 
 var blockFivteen = false;
@@ -146,9 +199,11 @@ $(".block-15").click(function() {
   if (!blockFour) {
     $(this).css("background-color", "grey");
     blockFivteen = true
+    gameStatus= true 
 
     if (blockFivteen && blockFour) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -158,11 +213,17 @@ $(".block-4").click(function() {
   if (blockFivteen && !blockFour ) {
     $(this).css("background-color", "grey")
     blockFour = true
-
+    gameStatus= true 
     if (blockFivteen && blockFour) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+      // count = count + 1
+    console.log(count)
     }
 }
+
+    
 })
     
 
@@ -174,9 +235,11 @@ $(".block-5").click(function() {
   if (!blockSix) {
     $(this).css("background-color", "grey");
     blockFive = true
+    gameStatus= true 
 
     if (blockFive && blockSix) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -184,11 +247,17 @@ $(".block-6").click(function() {
   if (blockFive && !blockSix ) {
     $(this).css("background-color", "grey")
     blockSix = true
+    gameStatus= true 
 
     if (blockFive && blockSix) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+      // count = count + 1
+    console.log(count)
     }
   }
+   
 })
 
 var blockTwentyOne = false;
@@ -198,21 +267,32 @@ $(".block-21").click(function() {
   if (!blockEight) {
     $(this).css("background-color", "grey");
     blockTwentyOne = true
+    gameStatus= true 
 
     if (blockTwentyOne && blockEight) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
+
+
+
 $(".block-8").click(function() {
   if (blockTwentyOne && !blockEight ) {
     $(this).css("background-color", "grey")
     blockEight = true
+    gameStatus= true 
 
     if (blockTwentyOne && blockEight) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+      // count = count + 1
+    console.log(count)
     }
   }
+  
 })
 
 var blockNine = false;
@@ -222,9 +302,10 @@ $(".block-9").click(function() {
   if (!blockEighteen) {
     $(this).css("background-color", "grey");
     blockNine = true
-
+    gameStatus= true 
     if (blockNine && blockEighteen) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -232,11 +313,16 @@ $(".block-18").click(function() {
   if (blockNine && !blockEighteen ) {
     $(this).css("background-color", "grey")
     blockEighteen = true
+    gameStatus= true 
 
     if (blockNine && blockEighteen) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+    console.log(count)
     }
   }
+    
 })
 
 var blockSixteen = false;
@@ -246,9 +332,11 @@ $(".block-16").click(function() {
   if (!blockTen) {
     $(this).css("background-color", "grey");
     blockSixteen = true
+    gameStatus= true 
 
     if (blockSixteen && blockTen) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -256,11 +344,17 @@ $(".block-10").click(function() {
   if (blockSixteen && !blockTen ) {
     $(this).css("background-color", "grey")
     blockTen = true
+    gameStatus= true 
 
     if (blockSixteen && blockTen) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+      // count = count + 1
+    console.log(count)
     }
   }
+    
 })
 
 var blockEleven = false;
@@ -270,9 +364,10 @@ $(".block-11").click(function() {
   if (!blockTwentyTwo) {
     $(this).css("background-color", "grey");
     blockEleven = true
-
+    gameStatus= true 
     if (blockEleven && blockTwentyTwo) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -280,11 +375,17 @@ $(".block-22").click(function() {
   if (blockEleven && !blockTwentyTwo ) {
     $(this).css("background-color", "grey")
     blockTwentyTwo = true
+    gameStatus= true 
 
     if (blockEleven && blockTwentyTwo) {
-      alert('Correct')
+      count = count + 1
+      alert('Correct      your score: '+count)   
+         gameStatus= true 
+      // count = count + 1
+    console.log(count)
     }
   }
+    
 })
 
 var blockThirteen = false;
@@ -294,9 +395,11 @@ $(".block-13").click(function() {
   if (!blockFourteen) {
     $(this).css("background-color", "grey");
     blockThirteen = true
+    gameStatus= true 
 
     if (blockThirteen && blockFourteen) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -304,11 +407,17 @@ $(".block-14").click(function() {
   if (blockThirteen && !blockFourteen ) {
     $(this).css("background-color", "grey")
     blockFourteen = true
-
+    gameStatus= true 
     if (blockThirteen && blockFourteen) {
-      alert('Correct')
+      count = count + 1
+
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+      // count = count + 1
+    console.log(count)
     }
   }
+    
 })
 
 var blockSeventeen = false;
@@ -318,9 +427,13 @@ $(".block-17").click(function() {
   if (!blockTwentyFour) {
     $(this).css("background-color", "grey");
     blockSeventeen = true
+    gameStatus= true 
 
     if (blockSeventeen && blockTwentyFour) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true 
+      
+    }
 
   }
 })
@@ -328,11 +441,18 @@ $(".block-24").click(function() {
   if (blockSeventeen && !blockTwentyFour ) {
     $(this).css("background-color", "grey")
     blockTwentyFour = true
+    gameStatus= true 
 
     if (blockSeventeen && blockTwentyFour) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+      
+    
     }
   }
+ 
+    
 })
 
 var blockNineteen = false;
@@ -342,9 +462,11 @@ $(".block-19").click(function() {
   if (!blockTwenty) {
     $(this).css("background-color", "grey");
     blockNineteen = true
+    gameStatus= true 
 
     if (blockNineteen && blockTwenty) {
-      alert('Correct')}
+      alert('Correct')
+      gameStatus= true }
 
   }
 })
@@ -352,11 +474,22 @@ $(".block-20").click(function() {
   if (blockNineteen && !blockTwenty ) {
     $(this).css("background-color", "grey")
     blockTwenty = true
+    gameStatus= true 
 
     if (blockNineteen && blockTwenty) {
-      alert('Correct')
+      count = count + 1
+        alert('Correct      your score: '+count)
+      gameStatus= true 
+    console.log(count)
     }
+    // if(count === 12){
+    //   alert("Congratulations!")
+    //   } else {
+    //     restart
+    //   }
   }
+   
+  
 })
 
 
@@ -364,17 +497,32 @@ $("img").click(function() {
   $('#myAudio')[0].play();
 })
 
-$("img").off(function() {
-  $('#myAudio')[0].pause();
+// $("img").off(function() {
+//   $('#myAudio')[0].pause();
+// })
+
+// $('img').click(function(){
+  
+//   $('img').html({"image": pause})
+//   console.log("image.pause")
+// })
 })
-
-
-
-$('#Start').click(function(){
-  $('#Start').start()
 })
-
-
+// $('.Restart').click(function(){
+//   $('#Restart').start()
+// })
+// var start = 0;
+// $(document).ready(function() {
+//     $('.button').click(function() {
+//         start = 1;
+//     });
+// });
+// if (start === 1) {
+// var ready = prompt("ready").click;
+// start = 0 
+// } else {
+  
+// }
 
 
 
