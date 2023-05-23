@@ -18,6 +18,7 @@ button {
    display: flex;
    margin: auto;
    flex-direction: row;
+   justify-content: first baseline;
     }
 
 

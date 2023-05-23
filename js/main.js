@@ -13,8 +13,13 @@ const button = document.createElement('button')
 button.innerText = 'start'
 button.id = 'mainButton'
 let gameStatus = false;
+
+// const restartButton = document.createElement('button')
+// restartButton.innerText = 'restart'
+// restartButton.id = 'Button'
+// let restartStatus = false
+// document.body.appendChild(restartButton)
 document.body.appendChild(button)
-$(document).ready(function() {
 
   $('body').append('<div class= "Unit"></div>');
   $('Unit').each('')
@@ -27,6 +32,18 @@ button.addEventListener('click', (event) => {
   }else {
     gameStatus=false
   }
+
+  
+  // restartButton.addEventListener('click', (event) => {
+  // console.log('clicked here')
+  // if (event.type === true){ 
+  //   restartStatus = true
+  //   console.log(restartStatus)
+  // }else {
+  //   restartStatus = false
+  // }
+
+
 
 
 
@@ -54,13 +71,15 @@ $(".block-1").click(function() {
       $(this).css("background-color", "grey");
       blockOne = true
       gameStatus= true 
-  
+      restartStatus = true
       if (blockOne && blockTwo) {
         alert('Correct')
-        gameStatus= true }
+        gameStatus= true
+        restartStatus = true }
   
     }
   })
+
   $(".block-2").click(function() {
     if (blockOne && !blockTwo ) {
       $(this).css("background-color", "grey")
@@ -482,15 +501,31 @@ $(".block-20").click(function() {
       gameStatus= true 
     console.log(count)
     }
-    // if(count === 12){
-    //   alert("Congratulations!")
-    //   } else {
-    //     restart
-    //   }
+  else {
+      alert("Congrats!")
+      console.log(congrats)
+      } 
+      
+
   }
    
   
 })
+
+function restart() {
+  gameStatus = false
+
+}
+
+// $('.restart').click(function(){
+//   restart();
+//   console.log(restart)
+
+// });
+
+// function restart(){
+//   Unit = 0;
+// }
 
 
 $("img").click(function() {
@@ -507,7 +542,22 @@ $("img").click(function() {
 //   console.log("image.pause")
 // })
 })
-})
+
+// })
+
+
+// restart() {
+//   let tokenElements = document.querySelectorAll('.token');
+//   tokenElements.forEach(token => {
+//     token.remove();
+//   });
+//   document.querySelector()
+//   })
+// }
+
+
+
+
 // $('.Restart').click(function(){
 //   $('#Restart').start()
 // })
