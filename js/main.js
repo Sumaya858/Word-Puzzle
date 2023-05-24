@@ -126,6 +126,9 @@ $(".block-7").click(function() {
       alert('Correct      your score: '+count)
       gameStatus= true 
     console.log(count)
+
+    count++;
+          if(count == 12){finished()}
     }
   }
   
@@ -205,6 +208,7 @@ $(".block-23").click(function() {
       gameStatus= true 
      
     console.log(count)
+    
   
     }
   }
@@ -239,6 +243,7 @@ $(".block-4").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+    
     }
 }
 
@@ -274,6 +279,8 @@ $(".block-6").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+
+    
     }
   }
    
@@ -309,6 +316,7 @@ $(".block-8").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+    
     }
   }
   
@@ -339,6 +347,7 @@ $(".block-18").click(function() {
         alert('Correct      your score: '+count)
       gameStatus= true 
     console.log(count)
+    
     }
   }
     
@@ -371,6 +380,7 @@ $(".block-10").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+    
     }
   }
     
@@ -402,6 +412,7 @@ $(".block-22").click(function() {
          gameStatus= true 
       // count = count + 1
     console.log(count)
+    
     }
   }
     
@@ -434,6 +445,7 @@ $(".block-14").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+    
     }
   }
     
@@ -467,7 +479,7 @@ $(".block-24").click(function() {
         alert('Correct      your score: '+count)
       gameStatus= true 
       
-    
+     
     }
   }
  
@@ -500,22 +512,45 @@ $(".block-20").click(function() {
         alert('Correct      your score: '+count)
       gameStatus= true 
     console.log(count)
+
+    
     }
   else {
-      alert("Congrats!")
-      console.log(congrats)
-      } 
       
+      } 
 
+    
   }
-   
+
+  function finished(){
+    document.body.style.background="url('https://media.tenor.com/JrY5vHW30h4AAAAC/congrats-congratulations.gif"
+  }
+  
+  // if (Container === 24 ) {
+
+  //   alert("Congrats!")
+  //   console.log(congrats)
+
+  // } else {
+
+  // }
+  
+
   
 })
 
-function restart() {
-  gameStatus = false
 
-}
+
+
+
+    
+
+  
+
+// function restart() {
+//   gameStatus = false
+
+// }
 
 // $('.restart').click(function(){
 //   restart();
@@ -542,6 +577,37 @@ $("img").click(function() {
 //   console.log("image.pause")
 // })
 })
+
+// function myBlocks(){
+//   location.reload();
+
+
+// document.getElementsByClassName("block-1").value = "";
+// document.getElementsByClassName("block-2").value = "";
+// document.getElementsByClassName("block-3").value = "";
+// document.getElementsByClassName("block-4").value = "";
+// document.getElementsByClassName("block-5").value = "";
+// document.getElementsByClassName("block-6").value = "";
+// document.getElementsByClassName("block-7").value = "";
+// document.getElementsByClassName("block-8").value = "";
+// document.getElementsByClassName("block-9").value = "";
+// document.getElementsByClassName("block-10").value = "";
+// document.getElementsByClassName("block-11").value = "";
+// document.getElementsByClassName("block-12").value = "";
+// document.getElementsByClassName("block-13").value = "";
+// document.getElementsByClassName("block-14").value = "";
+// document.getElementsByClassName("block-15").value = "";
+// document.getElementsByClassName("block-16").value = "";
+// document.getElementsByClassName("block-17").value = "";
+// document.getElementsByClassName("block-18").value = "";
+// document.getElementsByClassName("block-19").value = "";
+// document.getElementsByClassName("block-20").value = "";
+// document.getElementsByClassName("block-21").value = "";
+// document.getElementsByClassName("block-22").value = "";
+// document.getElementsByClassName("block-23").value = "";
+// document.getElementsByClassName("block-24").value = "";
+
+// };
 
 // })
 
