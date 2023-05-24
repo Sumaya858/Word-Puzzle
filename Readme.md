@@ -3,7 +3,8 @@
 #### discription
 The game based on a compounds words for kids to learn. When the two correct words get choosed, the player got a score and then he move on untill the game finished. 
 On behalf of developing the game, more stages will be added with different words, shuffle the words for the same round, synonyms , antonyms ... etc
-![alt](http://Project-1/Project-1/images/picofProj.jpg)
+![pic of Proj](https://media.git.generalassemb.ly/user/49241/files/f9e3af8e-1f6f-4f89-962e-308dd8d7dc50)
+
 
 
 
@@ -11,7 +12,7 @@ On behalf of developing the game, more stages will be added with different words
 
  There is a start button to start the game,the player click it first and then play. There is a restart button to reatart the game after finishing the round. Music button too if the player want to listen to it. 
 
-#### Parts whicn need to be developed
+#### Parts whicا need to be developed
  The restart button need to be changed from reload the page to restart the game it self with a shuffle. Music option too add a mute and pause function to it.
 
 #### Difficulties 
@@ -52,6 +53,9 @@ $(".block-24").click(function() {
      
     }
 `
+
+### Techniqes Used
+
 
 ### File Frames
 
