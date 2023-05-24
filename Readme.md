@@ -1,13 +1,13 @@
 # Word Search Puzzle
 
-####discription:
+#### discription
 The game based on a compounds words for kids to learn, when the two correct words get choosed, the player got a score and then he move on untill the game finished. 
 On behalf of developing the game, more stages will be added with different words, shuffle the words for the same round, synonyms , antonyms ... etc
-![alt text](http://Project-1/Project-1/images/picofProj.JPG)
+![alt](http://Project-1/Project-1/images/picofProj.JPG)
 
 
 
-####How the game works
+#### How the game works
 
  There is a start button to start the game,the player click it first and then play. There is a restart button to reatart the game after finishing the round. Music button too if the player want to listen to it. 
 

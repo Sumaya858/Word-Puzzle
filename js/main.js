@@ -76,6 +76,8 @@ $(".block-1").click(function() {
         alert('Correct')
         gameStatus= true
         restartStatus = true }
+
+        
   
     }
   })
@@ -92,6 +94,8 @@ $(".block-1").click(function() {
         alert('Correct      your score: '+count)
         gameStatus= true 
     console.log(count)
+
+   
         
       }
     }
@@ -127,8 +131,9 @@ $(".block-7").click(function() {
       gameStatus= true 
     console.log(count)
 
-    count++;
-          if(count == 12){finished()}
+    
+
+    
     }
   }
   
@@ -208,6 +213,8 @@ $(".block-23").click(function() {
       gameStatus= true 
      
     console.log(count)
+
+    
     
   
     }
@@ -243,6 +250,8 @@ $(".block-4").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+
+   
     
     }
 }
@@ -281,6 +290,8 @@ $(".block-6").click(function() {
     console.log(count)
 
     
+
+    
     }
   }
    
@@ -316,6 +327,8 @@ $(".block-8").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+
+    
     
     }
   }
@@ -347,6 +360,8 @@ $(".block-18").click(function() {
         alert('Correct      your score: '+count)
       gameStatus= true 
     console.log(count)
+
+   
     
     }
   }
@@ -381,6 +396,8 @@ $(".block-10").click(function() {
       // count = count + 1
     console.log(count)
     
+   
+
     }
   }
     
@@ -412,6 +429,7 @@ $(".block-22").click(function() {
          gameStatus= true 
       // count = count + 1
     console.log(count)
+    
     
     }
   }
@@ -445,6 +463,8 @@ $(".block-14").click(function() {
       gameStatus= true 
       // count = count + 1
     console.log(count)
+
+    
     
     }
   }
@@ -478,6 +498,10 @@ $(".block-24").click(function() {
       count = count + 1
         alert('Correct      your score: '+count)
       gameStatus= true 
+
+      
+
+      
       
      
     }
@@ -512,28 +536,20 @@ $(".block-20").click(function() {
         alert('Correct      your score: '+count)
       gameStatus= true 
     console.log(count)
-
     
+
     }
-  else {
+  
       
-      } 
+}
+alert('congrats')
+ 
 
-    
-  }
 
   function finished(){
     document.body.style.background="url('https://media.tenor.com/JrY5vHW30h4AAAAC/congrats-congratulations.gif"
   }
   
-  // if (Container === 24 ) {
-
-  //   alert("Congrats!")
-  //   console.log(congrats)
-
-  // } else {
-
-  // }
   
 
   
@@ -567,6 +583,7 @@ $("img").click(function() {
   $('#myAudio')[0].play();
 })
 
+
 // $("img").off(function() {
 //   $('#myAudio')[0].pause();
 // })
@@ -577,6 +594,8 @@ $("img").click(function() {
 //   console.log("image.pause")
 // })
 })
+
+
 
 // function myBlocks(){
 //   location.reload();
