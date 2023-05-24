@@ -23,6 +23,8 @@ On behalf of developing the game, more stages will be added with different words
 
 ### Favorites 
 when the click buttons works inside the blocks.
+When the color changed.
+Clickeing on the image button to play the music.
 
 ### The code of the blocks
 
