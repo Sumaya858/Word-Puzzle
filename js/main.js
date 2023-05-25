@@ -3,6 +3,8 @@
 
 
 let count = 0
+document.querySelector(".score").textContent= count;
+let test = 0
 
 // start();
 
@@ -90,8 +92,9 @@ $(".block-1").click(function() {
   
       if (blockOne && blockTwo) {
         count = count + 1
-
-        alert('Correct      your score: '+count)
+        test +=1       
+         if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
         gameStatus= true 
     console.log(count)
 
@@ -127,7 +130,9 @@ $(".block-7").click(function() {
 
     if (blockTwelve && blockSeven) {
       count = count + 1
-      alert('Correct      your score: '+count)
+      test +=1       
+       if(test==12){finished()}
+      document.querySelector(".score").textContent= count;
       gameStatus= true 
     console.log(count)
 
@@ -208,7 +213,9 @@ $(".block-23").click(function() {
     gameStatus= true 
     if (blockThree && blockTwentyThree) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       
       gameStatus= true 
      
@@ -246,7 +253,9 @@ $(".block-4").click(function() {
     gameStatus= true 
     if (blockFivteen && blockFour) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
       // count = count + 1
     console.log(count)
@@ -284,7 +293,9 @@ $(".block-6").click(function() {
 
     if (blockFive && blockSix) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
       // count = count + 1
     console.log(count)
@@ -323,7 +334,9 @@ $(".block-8").click(function() {
 
     if (blockTwentyOne && blockEight) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
       // count = count + 1
     console.log(count)
@@ -357,7 +370,9 @@ $(".block-18").click(function() {
 
     if (blockNine && blockEighteen) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
     console.log(count)
 
@@ -391,7 +406,9 @@ $(".block-10").click(function() {
 
     if (blockSixteen && blockTen) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
       // count = count + 1
     console.log(count)
@@ -425,7 +442,9 @@ $(".block-22").click(function() {
 
     if (blockEleven && blockTwentyTwo) {
       count = count + 1
-      alert('Correct      your score: '+count)   
+      test +=1
+        if(test==12){finished()}
+      document.querySelector(".score").textContent= count;   
          gameStatus= true 
       // count = count + 1
     console.log(count)
@@ -458,8 +477,10 @@ $(".block-14").click(function() {
     gameStatus= true 
     if (blockThirteen && blockFourteen) {
       count = count + 1
+      test +=1
+        if(test==12){finished()}
 
-        alert('Correct      your score: '+count)
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
       // count = count + 1
     console.log(count)
@@ -496,7 +517,9 @@ $(".block-24").click(function() {
 
     if (blockSeventeen && blockTwentyFour) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
 
       
@@ -533,7 +556,9 @@ $(".block-20").click(function() {
 
     if (blockNineteen && blockTwenty) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
     console.log(count)
     
@@ -542,21 +567,15 @@ $(".block-20").click(function() {
   
       
 }
-alert('congrats')
- 
-
-
-  function finished(){
-    document.body.style.background="url('https://media.tenor.com/JrY5vHW30h4AAAAC/congrats-congratulations.gif"
-  }
-  
-  
 
   
 })
 
 
-
+function finished(){
+    document.body.style.background="url('https://media.tenor.com/JrY5vHW30h4AAAAC/congrats-congratulations.gif"
+    alert('congrats')
+  }
 
 
     
