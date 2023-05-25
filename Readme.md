@@ -28,36 +28,35 @@ On behalf of developing the game, more stages will be added with different words
 
 ### The code of the blocks
 
-`var blockSeventeen = false;
-var blockTwentyFour = false;
+`var blockNineteen = false;
+var blockTwenty = false;
 
-$(".block-17").click(function() {
-  if (!blockTwentyFour) {
+$(".block-19").click(function() {
+  if (!blockTwenty) {
     $(this).css("background-color", "grey");
-    blockSeventeen = true
+    blockNineteen = true
     gameStatus= true 
 
-    if (blockSeventeen && blockTwentyFour) {
+    if (blockNineteen && blockTwenty) {
       alert('Correct')
-      gameStatus= true 
-      
-    }
+      gameStatus= true }
 
   }
 })
-$(".block-24").click(function() {
-  if (blockSeventeen && !blockTwentyFour ) {
+$(".block-20").click(function() {
+  if (blockNineteen && !blockTwenty ) {
     $(this).css("background-color", "grey")
-    blockTwentyFour = true
+    blockTwenty = true
     gameStatus= true 
 
-    if (blockSeventeen && blockTwentyFour) {
+    if (blockNineteen && blockTwenty) {
       count = count + 1
-        alert('Correct      your score: '+count)
+      test +=1
+        if(test==12){finished()}
+        document.querySelector(".score").textContent= count;
       gameStatus= true 
-      
-     
-    }
+    console.log(count)
+    
 `
 
 ### Techniqes Used
