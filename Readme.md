@@ -70,6 +70,8 @@ $(".block-20").click(function() {
 
 ### File Frames
 
+https://www.figma.com/file/k4LWkdQ3UE6BCFxcrbwE67/word-Search-Puzzle---Project-1?type=design&node-id=0-1&t=OWp7rA0q0ghc88l4-0
+
 ![File Frames2](https://media.git.generalassemb.ly/user/49241/files/c5246f80-8087-48ab-8513-002c24d91ee9)
 
 ### User Story
